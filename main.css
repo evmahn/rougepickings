@@ -12,6 +12,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: row wrap;
 	font-size: 1em;
 }
 
@@ -21,6 +22,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -58,6 +60,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: row wrap;
 }
 
 header h1 {
@@ -97,6 +100,7 @@ header nav ul li a{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: row wrap;
 }
 
 .main-image {
@@ -176,10 +180,52 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+
+@media all and (min-width:768px) {
+
+	.bottom-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: flex wrap;
+	}
+
+	.section-one: {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: flex wrap;
+	}
+
+	.section-two: {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: flex wrap;
+	}
+
+	.section-three: {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: flex wrap;
+	}
+
+}
+
+@media all and (min-width:1200px) {
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
 }
